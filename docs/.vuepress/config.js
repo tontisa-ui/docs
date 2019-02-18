@@ -1,5 +1,6 @@
 module.exports = {
-  title: 'ui 文档',
+  base: '/docs/',
+  title: 'tontisa-ui',
   description: 'tontisa ui 文档',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -7,17 +8,23 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
+      { text: '前端规范', link: '/frontend/' },
+      { text: '开发环境', link: '/development/' },
+      { text: '学习文档', link: '/notes/' },
       { text: '博文',
         items: [
           { text: 'Android', link: '/android/' },
           { text: 'ios', link: '/ios/' },
           { text: 'Web', link: '/web/' }
-          ]
-        },
-      { text: '关于', link: 'http://www.tontisa.com/' },
-      { text: 'Github', link: 'https://github.com/tcly861204/tontisa-ui' },
+        ]
+      },
+      { text: '关于tontisa', link: 'http://www.tontisa.com/' },
+      { text: 'Github', link: 'https://github.com/tontisa-ui/docs' },
     ],
     sidebar: {
+      '/install': [
+        'install'
+      ],
       '/android/': [
         "",
         "android1",
@@ -29,7 +36,7 @@ module.exports = {
       "/web/":[
         "",
         "web1"
-         ],
+      ],
     },
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
