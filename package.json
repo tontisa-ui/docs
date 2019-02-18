@@ -1,0 +1,27 @@
+{
+  "name": "tontisa-ui",
+  "version": "1.0.0",
+  "description": "tontisa ui",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcly861204/tontisa-ui.git"
+  },
+  "keywords": [
+    "tontisa",
+    "ui",
+    "v5"
+  ],
+  "author": "tcly861204@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcly861204/tontisa-ui/issues"
+  },
+  "homepage": "https://github.com/tcly861204/tontisa-ui#readme"
+}
