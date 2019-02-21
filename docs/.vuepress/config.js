@@ -39,6 +39,6 @@ module.exports = {
       ],
     },
     sidebarDepth: 2,
-    lastUpdated: 'Last Updated',
+    lastUpdated: '更新时间',
   },
 }
