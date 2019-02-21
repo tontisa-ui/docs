@@ -32,14 +32,6 @@ module.exports = {
     // 默认为 true，设置为 false 来禁用
     editLinks: true,
     editLinkText: '编辑此页',
-    comment: {
-      clientID: 'f65ce4bfaf8e001ec970',
-      clientSecret: '040178392fe76a5a76b822382719385f1d473e8d',
-      repo: 'tontisa-ui/docs',
-      owner: 'tcly861204',
-      admin: 'tcly861204',
-      distractionFreeMode: false
-    },
     nav: [
       { text: '主页', link: '/' },
       { text: '前端规范', link: '/frontend/' },
