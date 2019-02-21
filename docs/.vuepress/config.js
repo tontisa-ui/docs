@@ -2,6 +2,10 @@ module.exports = {
   base: '/docs/',
   title: 'tontisa-ui',
   description: '快应用UI组件库，简洁，易用，高效',
+  per_page: 5,
+  markdown: {
+    lineNumbers: true // 代码块显示行号
+  },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
@@ -9,96 +13,56 @@ module.exports = {
     displayAllHeaders: true,
     sidebarDepth: 0,
     lastUpdated: '更新时间',
+    repo: 'tontisa-ui/docs',
+    // 如果你的文档不在仓库的根部
+    docsDir: 'docs',
+    // 可选，默认为 master
+    docsBranch: 'master',
+    // 默认为 true，设置为 false 来禁用
+    editLinks: true,
     nav: [
       { text: '主页', link: '/' },
       { text: '前端规范', link: '/frontend/' },
       { text: '开发环境', link: '/development/' },
       { text: '学习文档', link: '/notes/' },
-      // { text: '博文',
-      //   items: [
-      //     { text: 'Android', link: '/android/' },
-      //     { text: 'ios', link: '/ios/' },
-      //     { text: 'Web', link: '/web/' }
-      //   ]
-      // },
       { text: '关于tontisa', link: 'http://www.tontisa.com/' },
       { text: 'Github', link: 'https://github.com/tontisa-ui/docs' },
     ],
-    sidebar: [
-			{
-        title: '介绍',
-        collapsable: false,
-        children: [
-          '/guide/'
-        ]
-			},
-			{
-        title: '基础组件',
-        collapsable: true,
-        children: [
-					'/guide/progress',
-					'/guide/input',
-					'/guide/cascader',
-					'/guide/checkbox',
-					'/guide/datePicker',
-					'/guide/fileUpload',
-					'/guide/imgUpload',
-					'/guide/layout',
-					'/guide/number',
-					'/guide/select',
-					'/guide/space',
-					'/guide/tags',
-					'/guide/timePicker',
-					'/guide/tip',
-					'/guide/title',
-					'/guide/steps'
-        ]
-			}
-			// {
-			// 	title: '表单组件',
-      //   children: [
-			// 		'/guide/button',
-			// 		'/guide/checkbox',
-			// 		'/guide/radio',
-			// 		'/guide/switch',
-			// 		'/guide/input',
-			// 		'/guide/rate',
-			// 		'/guide/slider'
-      //   ]
-			// },
-			// {
-			// 	title: '功能组件',
-      //   children: [
-			// 		'/guide/counter',
-			// 		'/guide/loading',
-			// 		'/guide/swiper',
-			// 		'/guide/indexlist',
-			// 		'/guide/picker',
-			// 		'/guide/tabs'
-      //   ]
-			// },
-			// {
-			// 	title: '提示反馈',
-      //   children: [
-			// 		'/guide/drawer',
-			// 		'/guide/toast',
-			// 		'/guide/dialog'
-      //   ]
-			// },
-			// {
-			// 	title: 'Changelog',
-      //   children: [
-			// 		'/guide/CHANGELOG'
-      //   ]
-			// }
-    ],
+    sidebar: {
+      // 侧边栏在 /foo/ 上
+      '/guide/': [
+        '',
+        {
+          title: '基础组件',
+          collapsable: true,
+          children: [
+            '/guide/base/progress',
+            '/guide/base/input',
+            '/guide/base/button',
+            '/guide/base/cascader',
+            '/guide/base/checkbox',
+            '/guide/base/datePicker',
+            '/guide/base/fileUpload',
+            '/guide/base/imgUpload',
+            '/guide/base/layout',
+            '/guide/base/number',
+            '/guide/base/select',
+            '/guide/base/space',
+            '/guide/base/tags',
+            '/guide/base/timePicker',
+            '/guide/base/tip',
+            '/guide/base/title',
+            '/guide/base/steps'
+          ]
+        }
+      ]
+    }
   },
   plugins: [
     [
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
-          // 不要忘了安装 moment
           const moment = require('moment')
           moment.locale(lang)
           return moment(timestamp).fromNow()
