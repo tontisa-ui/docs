@@ -26,6 +26,8 @@
   "homepage": "https://github.com/tcly861204/tontisa-ui#readme",
   "dependencies": {
     "iview": "^3.2.2",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress": "^0.14.9"
   },
   "devDependencies": {

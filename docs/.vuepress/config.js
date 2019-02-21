@@ -4,6 +4,17 @@ module.exports = {
   description: '快应用UI组件库，简洁，易用，高效',
   per_page: 5,
   markdown: {
+    anchor: {
+      permalink: true
+    },
+    toc: {
+      includeLevel: [1, 2]
+    },
+    config: md => {
+        // 使用更多 markdown-it 插件！
+        md.use(require('markdown-it-task-lists'))
+        .use(require('markdown-it-imsize'), { autofill: true })
+    },
     lineNumbers: true // 代码块显示行号
   },
   head: [
@@ -20,13 +31,21 @@ module.exports = {
     docsBranch: 'master',
     // 默认为 true，设置为 false 来禁用
     editLinks: true,
+    editLinkText: '编辑此页',
+    comment: {
+      clientID: 'f65ce4bfaf8e001ec970',
+      clientSecret: '040178392fe76a5a76b822382719385f1d473e8d',
+      repo: 'tontisa-ui/docs',
+      owner: 'tcly861204',
+      admin: 'tcly861204',
+      distractionFreeMode: false
+    },
     nav: [
       { text: '主页', link: '/' },
       { text: '前端规范', link: '/frontend/' },
       { text: '开发环境', link: '/development/' },
       { text: '学习文档', link: '/notes/' },
-      { text: '关于tontisa', link: 'http://www.tontisa.com/' },
-      { text: 'Github', link: 'https://github.com/tontisa-ui/docs' },
+      { text: '关于tontisa', link: 'http://www.tontisa.com/' }
     ],
     sidebar: {
       // 侧边栏在 /foo/ 上
