@@ -37,6 +37,20 @@ module.exports = {
         collapsable: true,
         children: [
 					'/guide/progress',
+					'/guide/input',
+					'/guide/cascader',
+					'/guide/checkbox',
+					'/guide/datePicker',
+					'/guide/fileUpload',
+					'/guide/imgUpload',
+					'/guide/layout',
+					'/guide/number',
+					'/guide/select',
+					'/guide/space',
+					'/guide/tags',
+					'/guide/timePicker',
+					'/guide/tip',
+					'/guide/title',
 					'/guide/steps'
         ]
 			}

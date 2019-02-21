@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/tcly861204/tontisa-ui/issues"
   },
-  "homepage": "https://github.com/tcly861204/tontisa-ui#readme"
+  "homepage": "https://github.com/tcly861204/tontisa-ui#readme",
+  "dependencies": {
+    "iview": "^3.2.2",
+    "vuepress": "^0.14.9"
+  }
 }
