@@ -1,0 +1,42 @@
+{
+  "name": "tontisa-ui",
+  "version": "1.0.0",
+  "description": "tontisa ui",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcly861204/tontisa-ui.git"
+  },
+  "keywords": [
+    "tontisa",
+    "ui",
+    "v5"
+  ],
+  "author": "tcly861204@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcly861204/tontisa-ui/issues"
+  },
+  "homepage": "https://github.com/tcly861204/tontisa-ui#readme",
+  "dependencies": {
+    "element-ui": "^2.5.4",
+    "highlight.js": "^9.14.2",
+    "iview": "^3.2.2",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "vue": "^2.6.6",
+    "vue-highlight.js": "^3.0.1",
+    "vuepress": "^0.14.9"
+  },
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "moment": "^2.24.0"
+  }
+}

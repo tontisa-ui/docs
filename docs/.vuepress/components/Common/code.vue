@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'DemoPage',
+  name: 'code',
   props: ['title', 'description'],
   data() {
     return {

@@ -4,13 +4,13 @@
 import VueHighlightJS from 'vue-highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
 
-// import iView from 'iview'
+// import iview from 'iview';
 // import 'iview/dist/styles/iview.css';
 
-import Element from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
-import '../.vuepress/public/css/index.css'
+import '../.vuepress/public/css/index.css';
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
@@ -20,6 +20,6 @@ export default ({
 }) => {
   // ...做一些其他的应用级别的优化
   Vue.use(VueHighlightJS)
-  // Vue.use(iView)
+  // Vue.use(iview)
   Vue.use(Element)
 }

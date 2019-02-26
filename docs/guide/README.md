@@ -8,7 +8,8 @@
 ```
 Vue.use(TTXUI)
 ```
-<Common-Democode title="基本用法" description="基本按钮用法">
+
+<Common-code title="基本用法" description="基本按钮用法">
   <test-test1></test-test1>
   <highlight-code slot="codeText" lang="vue">
     <template>
@@ -24,4 +25,4 @@ Vue.use(TTXUI)
       </div>
     </template>
   </highlight-code>
-</Common-Democode>
+</Common-code>

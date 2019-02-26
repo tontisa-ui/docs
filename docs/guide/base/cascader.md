@@ -29,5 +29,5 @@
 ### event 事件
 | 属性  |  说明  | 返回值  |
 | ------------ | ------------ | ------------ |
-| on-visible-change | 展开和关闭弹窗时触发  |  Boolean | 
+| on-visible-change | 展开和关闭弹窗时触发  |  Boolean |
 | on-change | 选择完成后的回调，返回值 value 即已选值 value，selectedData 为已选项的具体数据  |  value,selectedData |
