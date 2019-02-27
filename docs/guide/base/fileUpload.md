@@ -9,7 +9,7 @@
 ```
 ### props 属性 （待完善）
 | 属性  |  说明  | 类型  |  默认值  |
-| ------------ | ------------ | ------------  ------------ |
+| ------------ | ------------ | ------------ | ------------ |
 | max-size  |  文件大小限制，单位 kb	  | Number  |  -  |
 | type           | 上传控件的类型，可选值为 select（点击选择），drag（支持拖拽）   |string        | select |
 | accept         | 上传的<a style='color:#ff9800' href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept'>文件类型</a>  | string|  - |
@@ -28,7 +28,7 @@
 | name           | 上传的文件字段名                             | string      | file  |
 | label           | 左边label显示(为空时不渲染)                   | string      | ''  |
 | before-upload  |  上传文件之前的钩子，参数为上传的文件,返回字段为file， fileList	  | Function  |  -  |
-| on-progress  |  文件上传时的钩子，返回字段为 event, file, fileList	  | Function |  -  |
+| on-progress  |  文件上传时的钩子，返回字段为 file, fileList	  | Function |  -  |
 | on-success  |  文件上传成功时的钩子，返回字段为 response, file, fileList	  | Function  |  -  |
 | on-error  |  文件上传失败时的钩子，返回字段为 error, file, fileList	  | Function  |  -  |
 | on-format-error  |  文件格式验证失败时的钩子，返回字段为 formatData, file, fileList, key, index	  | Function |  -  |

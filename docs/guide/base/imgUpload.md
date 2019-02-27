@@ -8,7 +8,7 @@
 ```
 ### props 属性 （待完善）
 | 属性  |  说明  | 类型  |  默认值  |
-| ------------ | ------------ | ------------  ------------ |
+| ------------ | ------------ | ------------ | ------------ |
 | max-size  |  文件大小限制，单位 kb	  | Number  |  -  |
 | type           | 上传控件的类型，可选值为 select（点击选择），drag（支持拖拽）   |string        | select |
 | accept         | 上传的<a style='color:#ff9800' href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept'>文件类型</a>  | string|  - |
@@ -28,6 +28,7 @@
 | on-remove  |  文件列表移除文件时的钩子，返回字段为 file, fileList	  | Function  | false  |
 | on-format-error  |  文件格式验证失败时的钩子，返回字段为 file, fileList	  | Function |  false  |
 | on-exceeded-size  |  文件超出指定大小限制时的钩子，返回字段为 maxSize, file, fileList	  | Function | false  |
+
 ```js
 默认已上传可以用v-model， 格式如下：
 [
